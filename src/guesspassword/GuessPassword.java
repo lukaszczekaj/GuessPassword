@@ -11,11 +11,13 @@ package guesspassword;
  */
 public class GuessPassword {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        System.out.println("OK");
+        PasswordBreak pb =new PasswordBreak();
+        
+        pb.setPassword("adawd");
+        
+        System.out.println(pb.run());
+        
     }
-    
+
 }
