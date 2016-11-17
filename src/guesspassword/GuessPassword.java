@@ -5,18 +5,19 @@
  */
 package guesspassword;
 
-import Client.Client;
-import java.io.IOException;
 /**
  *
  * @author lukasz
  */
 public class GuessPassword {
 
-    public static void main(String[] args) throws IOException {
-        System.out.println("Uruchomiono aplikacje");
+    public static void main(String[] args) {
+        PasswordBreak pb =new PasswordBreak();
         
-        Client client = new Client();
+        pb.setPassword("adawd");
+        
+        System.out.println(pb.run());
+        
     }
 
 }
