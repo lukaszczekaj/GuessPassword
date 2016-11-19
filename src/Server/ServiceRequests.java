@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class ServiceRequests extends Thread {
 
-    static ServiceRequests connections[] = new ServiceRequests[2]; // tablica graczy
+    static ServiceRequests connections[] = new ServiceRequests[2];
     int nr;
     static int counterConnections = 0;
     public Socket socket = null;
@@ -24,7 +24,7 @@ public class ServiceRequests extends Thread {
             if (connections[i] == null) {
                 connections[i] = this;
                 nr = i;
-                for (int j = 0; j < 4; j++) //	pionki[j] = i * 4 + j;
+                for (int j = 0; j < 4; j++) 
                 {
                     break;
                 }
