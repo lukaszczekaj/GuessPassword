@@ -17,7 +17,7 @@ public class GuessPassword {
         
         pb.setPassword("adawd");
         
-        System.out.println(pb.run());
+      
         
     }
 
